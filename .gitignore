@@ -1,0 +1,12 @@
+node_modules
+dist
+.next
+.turbo
+storybook-static
+coverage
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example
+debug-storybook.log

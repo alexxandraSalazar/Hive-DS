@@ -1,0 +1,36 @@
+{
+  "name": "hive-ds",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Hive design system monorepo",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm --filter @alexxandraSalazar/hive-ui build",
+    "build:all": "pnpm -r --filter=./packages/** --filter=./apps/** run build",
+    "dev": "pnpm --filter @alexxandraSalazar/web dev",
+    "dev:ui": "pnpm --filter @alexxandraSalazar/hive-ui dev",
+    "storybook": "pnpm --filter @alexxandraSalazar/docs storybook",
+    "build-storybook": "pnpm --filter @alexxandraSalazar/docs build-storybook",
+    "typecheck": "pnpm --filter @alexxandraSalazar/hive-ui typecheck",
+    "lint": "pnpm -r --if-present run lint",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm build && changeset publish",
+    "prepare": "husky",
+    "commitlint": "commitlint --edit"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.1",
+    "@changesets/cli": "^3.0.3",
+    "@commitlint/cli": "^21.2.4",
+    "@commitlint/config-conventional": "^21.2.4",
+    "husky": "^9.1.7"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.15.0",
+      "onFail": "download"
+    }
+  }
+}

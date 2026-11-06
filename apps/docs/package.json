@@ -1,0 +1,43 @@
+{
+  "name": "@alexxandraSalazar/docs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "@alexxandraSalazar/hive-ui": "workspace:*",
+    "next": "16.4.5",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "latest",
+    "@storybook/addon-a11y": "10.6.5",
+    "@storybook/addon-docs": "10.6.5",
+    "@storybook/addon-onboarding": "10.6.5",
+    "@storybook/addon-vitest": "10.6.5",
+    "@storybook/react-vite": "10.6.5",
+    "@tailwindcss/turbopack": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitest/browser-playwright": "^4",
+    "@vitest/coverage-v8": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.5",
+    "eslint-plugin-storybook": "10.6.5",
+    "playwright": "latest",
+    "storybook": "10.6.5",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "vite": "^6.0.0",
+    "vitest": "^4"
+  },
+  "packageManager": "pnpm@11.15.0"
+}
