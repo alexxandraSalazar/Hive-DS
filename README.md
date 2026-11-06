@@ -1,4 +1,4 @@
-# Hive-DS
+# Hive Design System 🐝
 
 Monorepo for the Hive design system: React components, a demo app, and Storybook docs.
 
@@ -15,16 +15,22 @@ Hive-DS/
     └── ui/      # @alexxandraSalazar/hive-ui — publishable components
 ```
 
-| Package | Name | Purpose |
-| --- | --- | --- |
-| `packages/ui` | `@alexxandraSalazar/hive-ui` | Design system components (published) |
-| `apps/web` | `@alexxandraSalazar/web` | Demo app that consumes the UI package |
-| `apps/docs` | `@alexxandraSalazar/docs` | Storybook documentation |
+
+| Package       | Name                         | Purpose                               |
+| ------------- | ---------------------------- | ------------------------------------- |
+| `packages/ui` | `@alexxandraSalazar/hive-ui` | Design system components (published)  |
+| `apps/web`    | `@alexxandraSalazar/web`     | Demo app that consumes the UI package |
+| `apps/docs`   | `@alexxandraSalazar/docs`    | Storybook documentation               |
+
+
+
 
 ## Prerequisites
 
 - Node.js 20+
 - [pnpm](https://pnpm.io) 11+
+
+
 
 ## Getting started
 
@@ -33,13 +39,15 @@ pnpm install
 pnpm build
 ```
 
+
+
 ### Demo app
 
 ```bash
 pnpm dev
 ```
 
-Opens the Next.js consumer at http://localhost:3000.
+Opens the Next.js consumer at [http://localhost:3000](http://localhost:3000).
 
 ### Storybook
 
@@ -47,7 +55,7 @@ Opens the Next.js consumer at http://localhost:3000.
 pnpm storybook
 ```
 
-Opens Storybook at http://localhost:6006.
+Opens Storybook at [http://localhost:6006](http://localhost:6006).
 
 ### Local component changes
 
@@ -69,15 +77,19 @@ Inside this monorepo, apps depend on it with `workspace:*`. Outside the monorepo
 
 ## Scripts (repo root)
 
-| Script | Description |
-| --- | --- |
-| `pnpm build` | Build the UI package |
-| `pnpm build:all` | Build packages and apps |
-| `pnpm dev` | Start the web demo |
-| `pnpm storybook` | Start Storybook |
-| `pnpm typecheck` | Typecheck the UI package |
-| `pnpm changeset` | Create a changeset for a release |
-| `pnpm release` | Build + publish packages with changesets |
+
+| Script           | Description                              |
+| ---------------- | ---------------------------------------- |
+| `pnpm build`     | Build the UI package                     |
+| `pnpm build:all` | Build packages and apps                  |
+| `pnpm dev`       | Start the web demo                       |
+| `pnpm storybook` | Start Storybook                          |
+| `pnpm typecheck` | Typecheck the UI package                 |
+| `pnpm changeset` | Create a changeset for a release         |
+| `pnpm release`   | Build + publish packages with changesets |
+
+
+
 
 ## Adding a component
 
@@ -85,6 +97,8 @@ Inside this monorepo, apps depend on it with `workspace:*`. Outside the monorepo
 2. Export it from `packages/ui/src/index.ts`
 3. Add a story in `apps/docs/src/stories/`
 4. Verify in Storybook / the demo app (refresh the browser)
+
+
 
 ## Versioning and publishing
 
@@ -109,9 +123,12 @@ Consumers need the same scope mapping:
 @alexxandraSalazar:registry=https://npm.pkg.github.com
 ```
 
+
+
 ## What's next
 
 - Design tokens (color, spacing, typography)
 - More components beyond `Button`
 - Shared theme / CSS variables
 - Accessibility and visual regression checks in Storybook
+
