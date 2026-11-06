@@ -1,5 +1,11 @@
 # @alexxandraSalazar/hive-ui
 
+## 0.0.3
+
+### Patch Changes
+
+- [#4](https://github.com/alexxandraSalazar/Hive-DS/pull/4) [`d4075e8`](https://github.com/alexxandraSalazar/Hive-DS/commit/d4075e84a37d152c7ff996e99936a7ccbf2fddb1) Thanks [@alexxandraSalazar](https://github.com/alexxandraSalazar)! - Delete changeset unused read me and update copy in doc file.
+
 ## 0.0.2
 
 ### Patch Changes
